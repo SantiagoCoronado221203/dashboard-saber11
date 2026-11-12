@@ -1,0 +1,10 @@
+ENLACES DE ENTREGA
+==================
+
+Repositorio GitHub (reemplace USUARIO y REPOSITORIO despues de publicar):
+https://github.com/USUARIO/REPOSITORIO
+
+Dashboard en Binder (reemplace USUARIO y REPOSITORIO):
+https://mybinder.org/v2/gh/USUARIO/REPOSITORIO/HEAD?urlpath=proxy/8050/
+
+Nota: estos son enlaces plantilla. No se inventan enlaces activos porque la publicacion requiere una cuenta de GitHub y la creacion del repositorio por parte del autor.

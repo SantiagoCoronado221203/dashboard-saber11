@@ -1,0 +1,10 @@
+{
+  "modelo_seleccionado": "2. Logistica regularizada",
+  "registros_totales": 37781,
+  "registros_prueba": 9446,
+  "tasa_bajo_puntaje": 0.24485852677271644,
+  "corte_puntaje_global": 214.0,
+  "mejor_auc_prueba": 0.7755931720144746,
+  "semilla": 42,
+  "criterio_seleccion": "Mayor ROC-AUC en conjunto de prueba, tras ajuste por validacion cruzada en entrenamiento"
+}

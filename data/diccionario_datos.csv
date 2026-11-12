@@ -1,0 +1,30 @@
+variable,descripcion,tipo,rango_o_categorias,columna_original_icfes,uso_en_modelo
+estudiante_id,Consecutivo anonimo del examen,Texto,Sin datos personales,ESTU_CONSECUTIVO,No (identificador)
+periodo,Periodo de presentacion (año + semestre),Texto,20142 a 20224,PERIODO,No
+anio,Año de presentacion,Entera,2014 a 2022,PERIODO,Si
+departamento,Departamento donde esta el colegio,Categorica,33 departamentos,COLE_DEPTO_UBICACION,Si
+naturaleza,Tipo de colegio,Categorica,"Oficial, No Oficial",COLE_NATURALEZA,Si
+area,Ubicacion del colegio,Categorica,"Urbano, Rural",COLE_AREA_UBICACION,Si
+jornada,Jornada del colegio,Categorica,"Mañana, Tarde, Completa, Unica, Noche, Sabatina",COLE_JORNADA,Si
+calendario,Calendario academico,Categorica,"A, B, OTRO",COLE_CALENDARIO,Si
+bilingue,Colegio bilingue,Binaria,"Si, No, Sin dato",COLE_BILINGUE,Si
+caracter,Caracter del colegio,Categorica,"Academico, Tecnico, Tecnico/Academico, No aplica",COLE_CARACTER,Si
+genero_colegio,Genero del colegio,Categorica,"Mixto, Femenino, Masculino",COLE_GENERO,Si
+genero,Genero del estudiante,Categorica,"Femenino, Masculino",ESTU_GENERO,Si
+edad,Edad al presentar la prueba,Entera,13 a 60 (fuera de rango = faltante),ESTU_FECHANACIMIENTO,Si
+estrato,Estrato de la vivienda,Ordinal,0 (sin estrato) a 6,FAMI_ESTRATOVIVIENDA,Si
+educacion_madre,Maximo nivel educativo de la madre,Ordinal,0 (ninguno) a 9 (postgrado); No sabe = faltante,FAMI_EDUCACIONMADRE,Si
+educacion_padre,Maximo nivel educativo del padre,Ordinal,0 (ninguno) a 9 (postgrado); No sabe = faltante,FAMI_EDUCACIONPADRE,Si
+personas_hogar,Personas que viven en el hogar,Numerica,1 a 12 (rangos convertidos a su punto medio),FAMI_PERSONASHOGAR,Si
+cuartos_hogar,Cuartos para dormir en el hogar,Numerica,1 a 10,FAMI_CUARTOSHOGAR,Si
+tiene_internet,El hogar tiene internet,Binaria,"Si, No, Sin dato",FAMI_TIENEINTERNET,Si
+tiene_computador,El hogar tiene computador,Binaria,"Si, No, Sin dato",FAMI_TIENECOMPUTADOR,Si
+tiene_automovil,El hogar tiene automovil,Binaria,"Si, No, Sin dato",FAMI_TIENEAUTOMOVIL,Si
+tiene_lavadora,El hogar tiene lavadora,Binaria,"Si, No, Sin dato",FAMI_TIENELAVADORA,Si
+bienes_hogar,Cantidad de bienes del hogar (derivada),Entera,0 a 4,Calculada,Si
+personas_por_cuarto,Personas por cuarto - hacinamiento (derivada),Numerica,Mayor que 0,Calculada,Si
+educacion_max_padres,Mayor nivel educativo entre madre y padre (derivada),Ordinal,0 a 9,Calculada,Si
+punt_global,Puntaje global Saber 11,Entera,0 a 500,PUNT_GLOBAL,No (define el objetivo)
+punt_matematicas,Puntaje de matematicas,Numerica,0 a 100,PUNT_MATEMATICAS,No (solo se muestra)
+punt_lectura_critica,Puntaje de lectura critica,Numerica,0 a 100,PUNT_LECTURA_CRITICA,No (solo se muestra)
+bajo_puntaje,Variable objetivo,Binaria,1: puntaje global menor al percentil 25 (214); 0: en otro caso,Calculada,Objetivo
